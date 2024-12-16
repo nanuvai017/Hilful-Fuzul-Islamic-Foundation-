@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সদস্যপদ আবেদন - হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন" class="logo">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">মূলপাতা</a></li>
+                    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="programs.html">কার্যক্রম</a></li>
+                    <li><a href="donate.html">দান করুন</a></li>
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                    <li><a href="membership.html">সদস্য হন</a></li>
+                    <li><a href="hatia_mosque.html">হাতিয়ার গ্রাম জামে মসজিদ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Membership Section -->
+    <section class="membership">
+        <div class="container">
+            <h2>সদস্যপদ আবেদন</h2>
+            <p>আমাদের সংগঠনের সদস্য হতে আবেদন করুন। আপনি প্রতি মাসে কমপক্ষে 500 টাকা দান করার মাধ্যমে আমাদের কার্যক্রমে অংশগ্রহণ করতে পারবেন। আপনি তার চেয়ে বেশি দিতে পারেন, তবে 500 টাকা বাধ্যতামূলক।</p>
+
+            <!-- Subscription Plans -->
+            <h3>সাবস্ক্রিপশন প্ল্যান</h3>
+            <div class="plans">
+                <div class="plan">
+                    <h4>বেসিক প্ল্যান</h4>
+                    <p>প্রতি মাসে 500 টাকা</p>
+                    <button>এটি নির্বাচন করুন</button>
+                </div>
+                <div class="plan">
+                    <h4>প্ল্যাটিনাম প্ল্যান</h4>
+                    <p>প্রতি মাসে 1000 টাকা</p>
+                    <button>এটি নির্বাচন করুন</button>
+                </div>
+                <div class="plan">
+                    <h4>প্রিমিয়াম প্ল্যান</h4>
+                    <p>প্রতি মাসে 2000 টাকা</p>
+                    <button>এটি নির্বাচন করুন</button>
+                </div>
+            </div>
+
+            <!-- Membership Form -->
+            <form action="submit_membership.php" method="POST">
+                <label for="name">আপনার নাম</label>
+                <input type="text" id="name" name="name" placeholder="আপনার নাম" required>
+
+                <label for="email">ইমেইল</label>
+                <input type="email" id="email" name="email" placeholder="আপনার ইমেইল" required>
+
+                <label for="phone">ফোন নম্বর</label>
+                <input type="text" id="phone" name="phone" placeholder="আপনার ফোন নম্বর" required>
+
+                <label for="address">ঠিকানা</label>
+                <textarea id="address" name="address" placeholder="আপনার ঠিকানা" required></textarea>
+
+                <label for="donation-amount">প্রতি মাসে দানের পরিমাণ (কমপক্ষে 500 টাকা)</label>
+                <input type="number" id="donation-amount" name="donation_amount" placeholder="দানের পরিমাণ" required min="500">
+
+                <button type="submit">সদস্যপদ আবেদন করুন</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Donation History -->
+    <section class="donation-history">
+        <div class="container">
+            <h2>আপনার দানের ইতিহাস</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>তারিখ</th>
+                        <th>দান পরিমাণ</th>
+                        <th>পেমেন্ট পদ্ধতি</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>১২ এপ্রিল, ২০২৪</td>
+                        <td>৫০০ টাকা</td>
+                        <td>বিকাশ</td>
+                    </tr>
+                    <tr>
+                        <td>১৫ মে, ২০২৪</td>
+                        <td>১০০০ টাকা</td>
+                        <td>নগদ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Custom Payment Option -->
+    <section class="custom-donation">
+        <div class="container">
+            <h2>কাস্টম দান পরিমাণ</h2>
+            <form action="submit_donation.php" method="POST">
+                <label for="custom-donation">দান পরিমাণ</label>
+                <input type="number" id="custom-donation" name="custom_donation" placeholder="আপনার দান পরিমাণ" required min="500">
+                <button type="submit">দান করুন</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Feedback System -->
+    <section class="feedback">
+        <div class="container">
+            <h2>আপনার মতামত দিন</h2>
+            <form action="submit_feedback.php" method="POST">
+                <label for="feedback">মতামত</label>
+                <textarea id="feedback" name="feedback" placeholder="আপনার মতামত লিখুন" required></textarea>
+                <button type="submit">পাঠান</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Fundraising Progress Bar -->
+    <section class="fundraising-progress">
+        <div class="container">
+            <h2>ফান্ড রেইজিং প্রগ্রেস</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;">70%</div>
+            </div>
+            <p>আমাদের লক্ষ্য: ১০,০০,০০০ টাকা</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ২০২৪ হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+    <script defer src="scripts.js"></script>
+</body>
+</html>

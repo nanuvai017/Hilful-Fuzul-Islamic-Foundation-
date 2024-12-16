@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মূলপাতা - হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন" class="logo">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">মূলপাতা</a></li>
+                    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="programs.html">কার্যক্রম</a></li>
+                    <li><a href="donate.html">দান করুন</a></li>
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                    <li><a href="membership.html">সদস্য হন</a></li>
+                    <li><a href="hatia_mosque.html">হাতিয়ার গ্রাম জামে মসজিদ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন</h1>
+        <p>একটি অরাজনৈতিক, অলাভজনক এবং মানবকল্যাণমূলক প্রতিষ্ঠান।</p>
+    </section>
+
+    <!-- Slider Section (ব্যানার ছবি) -->
+    <section class="slider">
+        <div class="container">
+            <h2>আমাদের সংগঠন</h2>
+            <div class="banner">
+                <img src="banner_image.jpg" alt="আমাদের সংগঠন" class="banner-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Statistics -->
+    <section class="statistics">
+        <div class="container">
+            <h2>আমাদের সাফল্য</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <img src="donation_stat1.jpg" alt="শীতার্তদের সহায়তা" class="stat-img">
+                    <h3>৫০০+</h3>
+                    <p>শীতার্তদের সহায়তা</p>
+                    <a href="donate.html" class="btn">ডোনেট করুন</a>
+                </div>
+                <div class="stat-item">
+                    <img src="donation_stat2.jpg" alt="রক্তদান" class="stat-img">
+                    <h3>২০০+</h3>
+                    <p>রক্তদান</p>
+                    <a href="donate.html" class="btn">ডোনেট করুন</a>
+                </div>
+                <div class="stat-item">
+                    <img src="donation_stat3.jpg" alt="খাদ্য বিতরণ" class="stat-img">
+                    <h3>১০০০+</h3>
+                    <p>খাদ্য বিতরণ</p>
+                    <a href="donate.html" class="btn">ডোনেট করুন</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section (মঞ্চের সদস্যদের পরিচিতি) -->
+    <section class="team">
+        <div class="container">
+            <h2>আমাদের মঞ্চের সদস্যরা</h2>
+            
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="team_member1.jpg" alt="মো. জনাব আলী" class="team-img">
+                <h3>মো. জনাব আলী</h3>
+                <p>প্রধান পরিচালক</p>
+                <p>মো. জনাব আলী আমাদের সংগঠনের প্রধান পরিচালক। তিনি সমাজের কল্যাণে কাজ করতে সদা প্রস্তুত।</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="team_member2.jpg" alt="রাশেদা বেগম" class="team-img">
+                <h3>রাশেদা বেগম</h3>
+                <p>সামাজিক কর্মী</p>
+                <p>রাশেদা বেগম সমাজের অসহায় মানুষের জন্য কাজ করছেন এবং তাদের সহায়তায় নিয়োজিত।</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="team_member3.jpg" alt="মো. সোহেল রহমান" class="team-img">
+                <h3>মো. সোহেল রহমান</h3>
+                <p>কার্যক্রম সমন্বয়কারী</p>
+                <p>মো. সোহেল রহমান আমাদের সকল কার্যক্রমের সমন্বয়কারী হিসেবে দায়িত্ব পালন করছেন।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup News -->
+    <div id="popup-news" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>সাম্প্রতিক খবর!</h2>
+            <p>আমাদের নতুন কার্যক্রমে যুক্ত হতে আপনিও পারেন।</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('popup-news').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup-news').style.display = 'none';
+        }
+    </script>
+
+    <!-- Fundraising Calculator -->
+    <section class="fundraising-calculator">
+        <div class="container">
+            <h2>ফান্ডরাইজিং ক্যালকুলেটর</h2>
+            <label for="donation">আপনি কত টাকা দান করতে চান?</label>
+            <input type="number" id="donation" placeholder="টাকা দিন">
+            <button onclick="calculateDonation()">ক্যালকুলেট করুন</button>
+            <p id="donation-result"></p>
+        </div>
+    </section>
+
+    <script>
+        function calculateDonation() {
+            var donationAmount = document.getElementById('donation').value;
+            var result = 'আপনার দান : ' + donationAmount + ' টাকা। ধন্যবাদ!';
+            document.getElementById('donation-result').innerText = result;
+        }
+    </script>
+
+    <!-- Event Calendar -->
+    <section class="event-calendar">
+        <div class="container">
+            <h2>আসন্ন ইভেন্ট</h2>
+            <div id="calendar">
+                <!-- Calendar will be integrated here with dynamic event dates -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestone Tracker -->
+    <section class="milestones">
+        <div class="container">
+            <h2>আমাদের মাইলস্টোন</h2>
+            <div class="milestone">
+                <h3>৫০০০+</h3>
+                <p>দরিদ্রদের সাহায্য</p>
+            </div>
+            <div class="milestone">
+                <h3>১০০০+</h3>
+                <p>রক্তদান</p>
+            </div>
+            <div class="milestone">
+                <h3>১৫০০+</h3>
+                <p>খাদ্য বিতরণ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offices Section -->
+    <section class="offices">
+        <div class="container">
+            <h2>আমাদের অফিস</h2>
+            <ul>
+                <li>মেইন অফিস: কুড়িগ্রাম, উপজেলা উলিপুর, ইউনিয়ন হাতিয়া</li>
+                <li>ধরনি বাড়ি</li>
+                <li>কদম তলা</li>
+                <li>বাগুয়া অনন্তপুর</li>
+                <li>চড়েয়ার পাড়</li>
+                <li>চৌমুহনী বাজার</li>
+                <li>বেপাড়ির গ্ৰাম</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ২০২৪ হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+    <script defer src="scripts.js"></script>
+</body>
+</html>

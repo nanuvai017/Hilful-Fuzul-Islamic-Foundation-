@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>যোগাযোগ - হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন" class="logo">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">মূলপাতা</a></li>
+                    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="programs.html">কার্যক্রম</a></li>
+                    <li><a href="donate.html">দান করুন</a></li>
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                    <li><a href="membership.html">সদস্য হন</a></li>
+                    <li><a href="hatia_mosque.html">হাতিয়ার গ্রাম জামে মসজিদ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>যোগাযোগ করুন</h2>
+            <p>আপনার যেকোনো প্রশ্ন, মতামত বা পরামর্শ আমাদের কাছে পাঠান। আমরা আপনাকে দ্রুত সেবা দেওয়ার চেষ্টা করব।</p>
+
+            <!-- Contact Form -->
+            <form action="submit_contact.php" method="POST">
+                <label for="name">আপনার নাম</label>
+                <input type="text" id="name" name="name" placeholder="আপনার নাম" required>
+
+                <label for="email">ইমেইল</label>
+                <input type="email" id="email" name="email" placeholder="আপনার ইমেইল" required>
+
+                <label for="message">বার্তা</label>
+                <textarea id="message" name="message" placeholder="আপনার বার্তা" required></textarea>
+
+                <button type="submit">পাঠান</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ২০২৪ হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+    <script defer src="scripts.js"></script>
+</body>
+</html>

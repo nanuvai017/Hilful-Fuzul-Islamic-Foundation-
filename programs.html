@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কার্যক্রম - হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন" class="logo">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">মূলপাতা</a></li>
+                    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                    <li><a href="programs.html">কার্যক্রম</a></li>
+                    <li><a href="donate.html">দান করুন</a></li>
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                    <li><a href="membership.html">সদস্য হন</a></li>
+                    <li><a href="hatia_mosque.html">হাতিয়ার গ্রাম জামে মসজিদ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Program Slider Section -->
+    <section class="program-slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="program1.jpg" alt="খাদ্য বিতরণ">
+                <p>খাদ্য বিতরণ কর্মসূচি</p>
+            </div>
+            <div class="slide">
+                <img src="program2.jpg" alt="রক্তদান কর্মসূচি">
+                <p>রক্তদান কর্মসূচি</p>
+            </div>
+            <div class="slide">
+                <img src="program3.jpg" alt="শিক্ষা কার্যক্রম">
+                <p>শিক্ষা কার্যক্রম</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Filter Section -->
+    <section class="program-filter">
+        <div class="container">
+            <h2>ফিল্টার করুন</h2>
+            <select id="program-filter">
+                <option value="all">সব কর্মসূচি</option>
+                <option value="education">শিক্ষা</option>
+                <option value="health">স্বাস্থ্য</option>
+                <option value="food">খাদ্য বিতরণ</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Program Calendar Section -->
+    <section class="program-calendar">
+        <div class="container">
+            <h2>আমাদের আসন্ন কার্যক্রম</h2>
+            <div id="calendar"></div> <!-- You can integrate with fullCalendar or a similar library -->
+        </div>
+    </section>
+
+    <!-- Program Video Section -->
+    <section class="program-video">
+        <div class="container">
+            <h2>আমাদের কার্যক্রমের ভিডিও</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Program Rating Section -->
+    <section class="program-rating">
+        <div class="container">
+            <h2>আমাদের কার্যক্রম রেট করুন</h2>
+            <div class="rating">
+                <input type="radio" name="rating" value="1"> 1
+                <input type="radio" name="rating" value="2"> 2
+                <input type="radio" name="rating" value="3"> 3
+                <input type="radio" name="rating" value="4"> 4
+                <input type="radio" name="rating" value="5"> 5
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficiary Interviews Section -->
+    <section class="beneficiary-interviews">
+        <div class="container">
+            <h2>সুবিধাভোগীদের সাক্ষাৎকার</h2>
+            <div class="interview">
+                <h3>মো. শাহীন</h3>
+                <p>“এই খাদ্য সহায়তা আমাকে অনেক সাহায্য করেছে। আমি সত্যিই কৃতজ্ঞ।”</p>
+            </div>
+            <div class="interview">
+                <h3>রাশেদা বেগম</h3>
+                <p>“রক্তদান কর্মসূচির মাধ্যমে আমি অনেক মানুষকে সাহায্য করেছি। এটি খুবই প্রশংসনীয়।”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel for Program Management Section -->
+    <section class="admin-panel">
+        <div class="container">
+            <h2>প্রোগ্রাম পরিচালনা করুন</h2>
+            <p>এটি একটি অ্যাডমিন প্যানেল যেখানে আপনার টিম নতুন প্রোগ্রাম যোগ করতে বা পুরনো প্রোগ্রাম আপডেট করতে পারে।</p>
+            <button onclick="window.location.href='admin_dashboard.html'">এডমিন প্যানেল</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ২০২৪ হিলফুল ফুজুল ইসলামীক ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <script>
+        // Program Filter
+        const filter = document.getElementById('program-filter');
+        const programItems = document.querySelectorAll('.program-item');
+
+        filter.addEventListener('change', (event) => {
+            const selectedFilter = event.target.value;
+            programItems.forEach(item => {
+                if (selectedFilter === 'all' || item.classList.contains(selectedFilter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Program Slider (JavaScript for sliding)
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            document.querySelector('.slider-container').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>

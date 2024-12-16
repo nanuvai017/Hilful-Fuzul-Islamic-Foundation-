@@ -1,0 +1,380 @@
+/* General styles for all sections */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #0b8043;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+    color: #f46013;
+}
+
+/* Main Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0b8043;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Heading styles */
+section h2 {
+    font-size: 2.5rem;
+    color: #0b8043;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Membership Section */
+.membership .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership form input, .membership form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.membership button {
+    padding: 10px 20px;
+    background-color: #0b8043;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership button:hover {
+    background-color: #f46013;
+}
+
+/* Subscription Plans Section */
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.plan h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.plan p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.plan button {
+    padding: 10px 20px;
+    background-color: #0b8043;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: #f46013;
+}
+
+/* Donation History Table */
+.donation-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.donation-history th, .donation-history td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.donation-history th {
+    background-color: #0b8043;
+    color: white;
+}
+
+/* Custom Donation Section */
+.custom-donation input {
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.custom-donation button {
+    padding: 10px 20px;
+    background-color: #0b8043;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-donation button:hover {
+    background-color: #f46013;
+}
+
+/* Feedback Section */
+.feedback textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.feedback button {
+    padding: 10px 20px;
+    background-color: #0b8043;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Fundraising Progress Section */
+.fundraising-progress .progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.fundraising-progress .progress {
+    height: 100%;
+    background-color: #0b8043;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+/* Mosque Page Styles */
+.mosque .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mosque-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mosque-details .image {
+    width: 45%;
+}
+
+.mosque-details .image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.mosque-details .info {
+    width: 50%;
+}
+
+.mosque-details h3 {
+    font-size: 2rem;
+    color: #0b8043;
+    margin-bottom: 20px;
+}
+
+.mosque-details ul {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.mosque-details p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0b8043;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.donate-button:hover {
+    background-color: #f46013;
+}
+
+/* Event Registration */
+.event-registration .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event-registration input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.event-registration button {
+    padding: 10px 20px;
+    background-color: #0b8043;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-registration button:hover {
+    background-color: #f46013;
+}
+
+/* Blood Donation Section */
+.blood-donation-camp {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.blood-donation-camp .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.donate-blood-button {
+    padding: 10px 20px;
+    background-color: #0b8043;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.donate-blood-button:hover {
+    background-color: #f46013;
+}
+
+/* Volunteer Registration */
+.volunteer-registration .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.volunteer-registration input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.volunteer-registration button {
+    padding: 10px 20px;
+    background-color: #0b8043;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.volunteer-registration button:hover {
+    background-color: #f46013;
+}
